@@ -47,9 +47,9 @@ from db import Database, db as db_instance_placeholder # Import db as a placehol
 
 cookies_file_path = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
 
-#pwimg = "https://graph.org/file/8add8d382169e326f67e0-3bf38f92e52955e977.jpg"
-#ytimg = "https://graph.org/file/3aa806c302ceec62e6264-60ced740281395f68f.jpg"
-cpimg = "https://graph.org/file/5ed50675df0faf833efef-e102210eb72c1d5a17.jpg"
+#pwimg = "https://i.ibb.co/kgLcJZkL/x.jpg"
+#ytimg = "https://i.ibb.co/kgLcJZkL/x.jpg"
+cpimg = "https://i.ibb.co/kgLcJZkL/x.jpg"
 
 async def show_random_emojis(message):
     emojis = ['🎊', '🔮', '😎', '⚡️', '🚀', '✨', '💥', '🎉', '🥂', '🍾', '🦠', '🤖', '❤️‍🔥', '🕊️', '💃', '🥳','🐅','🦁']
@@ -57,7 +57,7 @@ async def show_random_emojis(message):
     return emoji_message
 
 # Define the owner's user ID
-OWNER_ID = 7062964338 # Replace with the actual owner's user ID
+OWNER_ID = 7960300322 # Replace with the actual owner's user ID
 
 # Initialize the database instance globally
 # This will attempt to connect to MongoDB when the bot starts
@@ -67,7 +67,7 @@ except Exception as e:
     logging.error(f"Failed to initialize database: {e}")
     sys.exit(1) # Exit if database connection fails
 
-AUTH_CHANNEL = -1002752608747
+AUTH_CHANNEL = -1003901529157
 
 # Function to check if a user is authorized
 def is_authorized(user_id: int) -> bool:
@@ -123,11 +123,11 @@ async def sudo_command(bot: Client, message: Message):
 keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🇮🇳ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ🇮🇳" ,url=f"https://t.me/ItsPikachubot") ],
+                    InlineKeyboardButton("🇮🇳ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ🇮🇳" ,url=f"https://t.me/robinhood_id") ],
                     [
-                    InlineKeyboardButton("🔔ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ🔔" ,url="https://t.me/Medicoarmy") ],
+                    InlineKeyboardButton("🔔ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ🔔" ,url="https://t.me/robinhood_id") ],
                     [
-                    InlineKeyboardButton("🦋ғᴏʟʟᴏᴡ ᴜs🦋" ,url="https://t.me/Medicoarmy")
+                    InlineKeyboardButton("🦋ғᴏʟʟᴏᴡ ᴜs🦋" ,url="https://t.me/robinhood_id")
                 ],
             ]
       )
